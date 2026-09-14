@@ -1,0 +1,15 @@
+node_modules
+dist
+lib
+.training
+.venv
+artifacts
+src/engine/model.json
+package-lock.json
+uv.lock
+
+.ori
+*.tgz
+evaluation.json
+performance.json
+demo-performance.json

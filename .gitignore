@@ -1,0 +1,16 @@
+node_modules/
+dist/
+lib/
+.training/
+artifacts/
+*.local
+.env*
+.venv/
+__pycache__/
+*.tgz
+*.tsbuildinfo
+.DS_Store
+coverage/
+.ori/
+.ruff_cache/
+*.log

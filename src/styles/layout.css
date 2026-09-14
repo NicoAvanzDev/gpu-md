@@ -1,0 +1,226 @@
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.site-header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  font: 600 24px var(--mono);
+  text-decoration: none;
+  letter-spacing: -1.6px;
+  display: flex;
+  align-items: center;
+}
+.brand-symbol {
+  color: var(--green);
+  font-size: 29px;
+  margin-right: 10px;
+}
+.slash {
+  color: #5c674f;
+  margin: 0 2px;
+}
+.edition {
+  font: 12px var(--mono);
+  letter-spacing: 1.1px;
+  color: var(--muted);
+}
+.edition span {
+  color: #465342;
+}
+.text-link {
+  font: 14px var(--mono);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.text-link:hover {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.hero {
+  padding: 72px 0 64px;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.eyebrow {
+  font: 12px var(--mono);
+  letter-spacing: 1.35px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.tiny-square {
+  height: 6px;
+  width: 6px;
+  background: #709449;
+}
+h1 {
+  font-size: clamp(52px, 5.5vw, 76px);
+  font-weight: 500;
+  line-height: 1.03;
+  letter-spacing: -4.3px;
+  margin: 27px 0 23px;
+}
+h1 span {
+  color: #596a4a;
+}
+.hero-copy > p {
+  font-size: 18px;
+  color: #62655b;
+  line-height: 1.75;
+  margin: 0;
+}
+.hero-link {
+  font: 14px var(--mono);
+  text-decoration: none;
+  margin-top: 29px;
+  display: inline-flex;
+  gap: 22px;
+  border-bottom: 1px solid #a7b59a;
+  padding-bottom: 7px;
+}
+.hero-link:hover {
+  color: #536b38;
+}
+.hero-notebook {
+  min-width: 0;
+  background: #ebeee3;
+  border: 1px solid #d8ddce;
+  transform: rotate(-1deg);
+  box-shadow: 5px 6px 0 #e6e8de;
+  position: relative;
+}
+.notebook-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 24px;
+  border-bottom: 1px dashed #cbd2bf;
+  font: 12px var(--mono);
+  color: #5f6652;
+}
+.notebook-top span:last-child {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.hero-notebook pre {
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0;
+  padding: 25px 24px;
+  overflow-x: auto;
+}
+.code-muted {
+  color: #5f6655;
+}
+.code-green {
+  color: #407446;
+}
+.code-comment {
+  color: #5d6651;
+}
+.notebook-bottom {
+  padding: 17px 24px;
+  border-top: 1px dashed #cbd2bf;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5c6b51;
+}
+.spark {
+  font-size: 36px;
+  color: #586b3f;
+}
+.notebook-arrow {
+  margin-left: auto;
+  font-size: 24px;
+  color: #5c6850;
+}
+.facts {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.9fr;
+  padding: 23px 0;
+  margin-bottom: 64px;
+}
+.facts > div {
+  padding: 0 28px;
+  border-left: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.facts > div:first-child {
+  padding-left: 0;
+  border: 0;
+}
+.facts strong {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+.facts strong small {
+  font-size: 18px;
+  color: #5f6456;
+}
+.facts > div > span {
+  font: 12px var(--mono);
+  letter-spacing: 1px;
+  color: #616657;
+}
+.facts .fact-note {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.fact-note p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
+  color: #5d6557;
+}
+.facts .fact-note .local-icon {
+  font-size: 29px;
+  color: #5d664f;
+}
+.section-heading {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  gap: 15px;
+}
+.section-heading > div {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.section-number {
+  font: 12px var(--mono);
+  color: #61675a;
+}
+.section-heading h2 {
+  font-size: 22px;
+  letter-spacing: -0.45px;
+  font-weight: 550;
+  margin: 0;
+}
+.subtle {
+  font: 12px var(--mono);
+  color: var(--muted);
+}

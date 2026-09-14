@@ -1,0 +1,364 @@
+{
+  "date": "2026-09-10T07:59:26.915Z",
+  "adapter": "nvidia · lovelace",
+  "method": "Production ES modules; two warm-ups plus output validation; seven measured runs with rotating engine order. Entire Markdown-to-HTML call, including features, transfers, predictions and assembly; DOM excluded. No document/result cache.",
+  "buildSHA256": "f2c53592a5351b4826c78ec03150a4a37bafd1bf80fe319cb5937d65d08d92d2",
+  "baselineSHA256": "32efe44813a300ebb2e79e323476f7eececc38fd8993e48b12744d1abada271b",
+  "workloads": [
+    {
+      "characters": 1280,
+      "engines": [
+        {
+          "median": 3.299999952316284,
+          "name": "baseline GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 0.20000004768371585,
+              "features": 0.09999990463256836,
+              "inference": 3,
+              "total": 3.299999952316284
+            },
+            "total": 3.299999952316284
+          }
+        },
+        {
+          "median": 0.5,
+          "name": "baseline CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 0.19999992847442627,
+              "features": 0.10000002384185792,
+              "inference": 0.20000004768371585,
+              "total": 0.5
+            },
+            "total": 0.5
+          }
+        },
+        {
+          "median": 2.700000047683716,
+          "name": "current GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 0.10000002384185792,
+              "features": 0.10000002384185792,
+              "inference": 2.5,
+              "total": 2.700000047683716
+            },
+            "total": 2.700000047683716
+          }
+        },
+        {
+          "median": 0.19999992847442627,
+          "name": "current CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 0,
+              "features": 0.09999990463256836,
+              "inference": 0.10000002384185792,
+              "total": 0.19999992847442627
+            },
+            "total": 0.19999992847442627
+          }
+        },
+        {
+          "median": 0.2999999523162842,
+          "name": "markdown-it",
+          "representative": {
+            "adapter": "markdown-it",
+            "total": 0.2999999523162842
+          }
+        }
+      ],
+      "lines": 41,
+      "name": "field-1"
+    },
+    {
+      "characters": 128099,
+      "engines": [
+        {
+          "median": 30.5,
+          "name": "baseline GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 13.399999976158142,
+              "features": 5.699999928474426,
+              "inference": 11.200000047683716,
+              "total": 30.399999976158146
+            },
+            "total": 30.5
+          }
+        },
+        {
+          "median": 46.5,
+          "name": "baseline CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 12.5,
+              "features": 5.700000047683716,
+              "inference": 28.199999928474423,
+              "total": 46.5
+            },
+            "total": 46.5
+          }
+        },
+        {
+          "median": 10,
+          "name": "current GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 3.799999952316284,
+              "features": 1.2000000476837158,
+              "inference": 5,
+              "total": 10
+            },
+            "total": 10
+          }
+        },
+        {
+          "median": 12.800000071525574,
+          "name": "current CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 3.899999976158142,
+              "features": 0.8999999761581421,
+              "inference": 7.800000071525574,
+              "total": 12.700000047683716
+            },
+            "total": 12.800000071525574
+          }
+        },
+        {
+          "median": 7.899999976158142,
+          "name": "markdown-it",
+          "representative": {
+            "adapter": "markdown-it",
+            "total": 7.899999976158142
+          }
+        }
+      ],
+      "lines": 4100,
+      "name": "field-100"
+    },
+    {
+      "characters": 82399,
+      "engines": [
+        {
+          "median": 30.899999976158146,
+          "name": "baseline GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 16,
+              "features": 3.600000023841858,
+              "inference": 11,
+              "total": 30.899999976158146
+            },
+            "total": 30.899999976158146
+          }
+        },
+        {
+          "median": 55.09999990463257,
+          "name": "baseline CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 17.59999990463257,
+              "features": 3.700000047683716,
+              "inference": 33.700000047683716,
+              "total": 55.09999990463257
+            },
+            "total": 55.09999990463257
+          }
+        },
+        {
+          "median": 10.600000023841858,
+          "name": "current GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 5.399999976158142,
+              "features": 1,
+              "inference": 3.899999976158142,
+              "total": 10.5
+            },
+            "total": 10.600000023841858
+          }
+        },
+        {
+          "median": 14.100000023841858,
+          "name": "current CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 5,
+              "features": 1,
+              "inference": 8,
+              "total": 14.100000023841858
+            },
+            "total": 14.100000023841858
+          }
+        },
+        {
+          "median": 8.300000071525574,
+          "name": "markdown-it",
+          "representative": {
+            "adapter": "markdown-it",
+            "total": 8.300000071525574
+          }
+        }
+      ],
+      "lines": 4900,
+      "name": "kitchen-100"
+    },
+    {
+      "characters": 130808,
+      "engines": [
+        {
+          "median": 27.40000009536743,
+          "name": "baseline GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 12.400000095367432,
+              "features": 4.600000023841858,
+              "inference": 10.299999952316284,
+              "total": 27.40000009536743
+            },
+            "total": 27.40000009536743
+          }
+        },
+        {
+          "median": 45.89999997615814,
+          "name": "baseline CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 14.200000047683716,
+              "features": 4.099999904632568,
+              "inference": 27.5,
+              "total": 45.89999997615814
+            },
+            "total": 45.89999997615814
+          }
+        },
+        {
+          "median": 7.799999952316284,
+          "name": "current GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 3.5,
+              "features": 0.9000000953674316,
+              "inference": 3.1999999284744263,
+              "total": 7.799999952316284
+            },
+            "total": 7.799999952316284
+          }
+        },
+        {
+          "median": 12.299999952316284,
+          "name": "current CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 3.399999976158142,
+              "features": 0.7999999523162842,
+              "inference": 8,
+              "total": 12.299999952316284
+            },
+            "total": 12.299999952316284
+          }
+        },
+        {
+          "median": 7,
+          "name": "markdown-it",
+          "representative": {
+            "adapter": "markdown-it",
+            "total": 7
+          }
+        }
+      ],
+      "lines": 4199,
+      "name": "distinct-100"
+    },
+    {
+      "characters": 1280999,
+      "engines": [
+        {
+          "median": 250.10000002384183,
+          "name": "baseline GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 112.20000004768372,
+              "features": 51.29999995231629,
+              "inference": 86,
+              "total": 250
+            },
+            "total": 250.10000002384183
+          }
+        },
+        {
+          "median": 444.60000002384186,
+          "name": "baseline CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 122,
+              "features": 43.39999997615814,
+              "inference": 278.60000002384186,
+              "total": 444.60000002384186
+            },
+            "total": 444.60000002384186
+          }
+        },
+        {
+          "median": 60.300000071525574,
+          "name": "current GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "timings": {
+              "assemble": 33,
+              "features": 10.5,
+              "inference": 16.200000047683716,
+              "total": 60.300000071525574
+            },
+            "total": 60.300000071525574
+          }
+        },
+        {
+          "median": 118.79999995231628,
+          "name": "current CPU",
+          "representative": {
+            "adapter": "JavaScript · same quantized model",
+            "timings": {
+              "assemble": 32.299999952316284,
+              "features": 9.5,
+              "inference": 76.29999995231628,
+              "total": 118.79999995231628
+            },
+            "total": 118.79999995231628
+          }
+        },
+        {
+          "median": 74.30000007152557,
+          "name": "markdown-it",
+          "representative": {
+            "adapter": "markdown-it",
+            "total": 74.30000007152557
+          }
+        }
+      ],
+      "lines": 41000,
+      "name": "field-1000"
+    }
+  ]
+}

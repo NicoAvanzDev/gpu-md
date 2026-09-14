@@ -1,0 +1,213 @@
+{
+  "source": "https://spec.commonmark.org/0.31.2/spec.json",
+  "corpusLicense": "CC BY-SA 4.0; John MacFarlane",
+  "modelTraining": {
+    "seed": 20260909,
+    "documents": 1800,
+    "lines": 37298,
+    "epochs": 70,
+    "framework": "PyTorch",
+    "torchVersion": "2.11.0+cu128",
+    "device": "cuda",
+    "gpu": "NVIDIA RTX 1000 Ada Generation Laptop GPU",
+    "cudaVersion": "12.8",
+    "seconds": 7.89010842499556,
+    "teacher": "markdown-it 15.0.1",
+    "corpus": "synthetic",
+    "validationDocuments": 300,
+    "validationLines": 6345,
+    "lineAgreement": 0.9900709390640259,
+    "testDocuments": 300,
+    "testLines": 6202,
+    "testLineAgreement": 0.9911318421363831,
+    "perClass": {
+      "text": {
+        "lines": 748,
+        "agreement": 0.9451872110366821
+      },
+      "blank": {
+        "lines": 1950,
+        "agreement": 0.9999999403953552
+      },
+      "heading": {
+        "lines": 128,
+        "agreement": 1
+      },
+      "fence": {
+        "lines": 250,
+        "agreement": 1
+      },
+      "quote": {
+        "lines": 870,
+        "agreement": 1
+      },
+      "bullet": {
+        "lines": 673,
+        "agreement": 0.9985141158103943
+      },
+      "ordered": {
+        "lines": 263,
+        "agreement": 1
+      },
+      "rule": {
+        "lines": 662,
+        "agreement": 1
+      },
+      "table": {
+        "lines": 263,
+        "agreement": 0.9733840227127075
+      },
+      "separator": {
+        "lines": 172,
+        "agreement": 0.9883720874786377
+      },
+      "indented": {
+        "lines": 223,
+        "agreement": 0.982062816619873
+      }
+    }
+  },
+  "examples": 652,
+  "exactSpecMatches": 580,
+  "exactSpecAgreement": 0.8895705521472392,
+  "exactTeacherMatches": 637,
+  "exactTeacherAgreement": 0.9769938650306749,
+  "sections": {
+    "Tabs": {
+      "examples": 11,
+      "exactSpecMatches": 11,
+      "exactTeacherMatches": 11
+    },
+    "Backslash escapes": {
+      "examples": 13,
+      "exactSpecMatches": 12,
+      "exactTeacherMatches": 12
+    },
+    "Entity and numeric character references": {
+      "examples": 17,
+      "exactSpecMatches": 16,
+      "exactTeacherMatches": 16
+    },
+    "Precedence": {
+      "examples": 1,
+      "exactSpecMatches": 1,
+      "exactTeacherMatches": 1
+    },
+    "Thematic breaks": {
+      "examples": 19,
+      "exactSpecMatches": 19,
+      "exactTeacherMatches": 19
+    },
+    "ATX headings": {
+      "examples": 18,
+      "exactSpecMatches": 18,
+      "exactTeacherMatches": 18
+    },
+    "Setext headings": {
+      "examples": 27,
+      "exactSpecMatches": 27,
+      "exactTeacherMatches": 27
+    },
+    "Indented code blocks": {
+      "examples": 12,
+      "exactSpecMatches": 12,
+      "exactTeacherMatches": 12
+    },
+    "Fenced code blocks": {
+      "examples": 29,
+      "exactSpecMatches": 29,
+      "exactTeacherMatches": 29
+    },
+    "HTML blocks": {
+      "examples": 44,
+      "exactSpecMatches": 0,
+      "exactTeacherMatches": 44
+    },
+    "Link reference definitions": {
+      "examples": 27,
+      "exactSpecMatches": 26,
+      "exactTeacherMatches": 26
+    },
+    "Paragraphs": {
+      "examples": 8,
+      "exactSpecMatches": 8,
+      "exactTeacherMatches": 8
+    },
+    "Blank lines": {
+      "examples": 1,
+      "exactSpecMatches": 1,
+      "exactTeacherMatches": 1
+    },
+    "Block quotes": {
+      "examples": 25,
+      "exactSpecMatches": 25,
+      "exactTeacherMatches": 23
+    },
+    "List items": {
+      "examples": 48,
+      "exactSpecMatches": 48,
+      "exactTeacherMatches": 48
+    },
+    "Lists": {
+      "examples": 26,
+      "exactSpecMatches": 24,
+      "exactTeacherMatches": 26
+    },
+    "Inlines": {
+      "examples": 1,
+      "exactSpecMatches": 1,
+      "exactTeacherMatches": 1
+    },
+    "Code spans": {
+      "examples": 22,
+      "exactSpecMatches": 21,
+      "exactTeacherMatches": 21
+    },
+    "Emphasis and strong emphasis": {
+      "examples": 132,
+      "exactSpecMatches": 129,
+      "exactTeacherMatches": 129
+    },
+    "Links": {
+      "examples": 90,
+      "exactSpecMatches": 86,
+      "exactTeacherMatches": 88
+    },
+    "Images": {
+      "examples": 22,
+      "exactSpecMatches": 22,
+      "exactTeacherMatches": 22
+    },
+    "Autolinks": {
+      "examples": 19,
+      "exactSpecMatches": 19,
+      "exactTeacherMatches": 19
+    },
+    "Raw HTML": {
+      "examples": 20,
+      "exactSpecMatches": 7,
+      "exactTeacherMatches": 18
+    },
+    "Hard line breaks": {
+      "examples": 15,
+      "exactSpecMatches": 13,
+      "exactTeacherMatches": 13
+    },
+    "Soft line breaks": {
+      "examples": 2,
+      "exactSpecMatches": 2,
+      "exactTeacherMatches": 2
+    },
+    "Textual content": {
+      "examples": 3,
+      "exactSpecMatches": 3,
+      "exactTeacherMatches": 3
+    }
+  },
+  "trustedHtml": {
+    "exactSpecMatches": 652,
+    "exactSpecAgreement": 1,
+    "allowHtml": true
+  },
+  "note": "Strict byte-for-byte HTML comparison. The primary score keeps source HTML escaped. trustedHtml explicitly enables source HTML to match the specification. This corpus is a development regression suite, not held-out evidence of generalization."
+}

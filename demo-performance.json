@@ -1,0 +1,151 @@
+{
+  "date": "2026-09-10T08:51:56.650Z",
+  "adapter": "nvidia · lovelace",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+  "method": "Production ES modules. Three warm-ups; median of seven measured runs with rotating engine order. Complete Markdown-to-HTML, including features, transfers, inference and assembly; DOM excluded. No document/result cache.",
+  "buildSHA256": "753bd9f728f1598815420ce2135901fa45ea0153c87316e4f295eefe84dc745a",
+  "workloads": [
+    {
+      "characters": 5560820,
+      "engines": [
+        {
+          "matchesReference": false,
+          "median": 251.39999997615817,
+          "name": "current GPU",
+          "representative": {
+            "adapter": "nvidia · lovelace",
+            "backend": "gpu",
+            "timings": {
+              "assemble": 149.19999992847443,
+              "features": 68.5,
+              "inference": 29.700000047683716,
+              "total": 251.29999995231628
+            },
+            "total": 251.39999997615817
+          },
+          "runs": [
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 182.60000002384183,
+                "features": 66.19999992847443,
+                "inference": 27.399999976158146,
+                "total": 280
+              },
+              "total": 280.10000002384186
+            },
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 177.30000007152557,
+                "features": 67.90000009536743,
+                "inference": 30.199999928474423,
+                "total": 278.60000002384186
+              },
+              "total": 278.60000002384186
+            },
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 163,
+                "features": 44.09999990463257,
+                "inference": 22.100000023841854,
+                "total": 234.10000002384183
+              },
+              "total": 234.10000002384183
+            },
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 149.19999992847443,
+                "features": 68.5,
+                "inference": 29.700000047683716,
+                "total": 251.29999995231628
+              },
+              "total": 251.39999997615817
+            },
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 173,
+                "features": 67.70000004768372,
+                "inference": 29.799999952316284,
+                "total": 273.7999999523163
+              },
+              "total": 273.7999999523163
+            },
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 140.10000002384186,
+                "features": 43.59999990463257,
+                "inference": 32.60000002384186,
+                "total": 219.29999995231628
+              },
+              "total": 219.29999995231628
+            },
+            {
+              "adapter": "nvidia · lovelace",
+              "backend": "gpu",
+              "timings": {
+                "assemble": 136.90000009536743,
+                "features": 45.79999995231629,
+                "inference": 23.399999976158146,
+                "total": 210.30000007152557
+              },
+              "total": 210.30000007152557
+            }
+          ]
+        },
+        {
+          "matchesReference": true,
+          "median": 349.5,
+          "name": "markdown-it",
+          "representative": {
+            "adapter": "markdown-it",
+            "total": 349.5
+          },
+          "runs": [
+            {
+              "adapter": "markdown-it",
+              "total": 359.2000000476837
+            },
+            {
+              "adapter": "markdown-it",
+              "total": 412.6999999284744
+            },
+            {
+              "adapter": "markdown-it",
+              "total": 339.6999999284744
+            },
+            {
+              "adapter": "markdown-it",
+              "total": 349.5
+            },
+            {
+              "adapter": "markdown-it",
+              "total": 367.5
+            },
+            {
+              "adapter": "markdown-it",
+              "total": 347.09999990463257
+            },
+            {
+              "adapter": "markdown-it",
+              "total": 332.7000000476837
+            }
+          ]
+        }
+      ],
+      "lines": 177981,
+      "name": "field-large",
+      "sourceSHA256": "bd8e36648ec15131e9975468727dfc964af6ba6cde6e74db88037f06a6f115a6"
+    }
+  ]
+}

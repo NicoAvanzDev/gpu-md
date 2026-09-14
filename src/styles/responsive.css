@@ -1,0 +1,360 @@
+@media (min-width: 1500px) {
+  .wrap {
+    max-width: 1320px;
+  }
+  .hero {
+    padding-top: 88px;
+    padding-bottom: 78px;
+    gap: 120px;
+  }
+  .workspace {
+    height: 640px;
+  }
+  .rendered {
+    font-size: 16px;
+    padding: 25px 36px;
+  }
+  .editor-body textarea {
+    font-size: 16px;
+  }
+  #line-numbers {
+    line-height: 22.2px;
+  }
+  .hero-notebook pre {
+    font-size: 16px;
+  }
+}
+@media (max-width: 950px) {
+  .wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .hero {
+    gap: 35px;
+    padding-top: 54px;
+  }
+  .hero-notebook pre {
+    font-size: 12px;
+    padding: 20px 17px;
+  }
+  .notebook-top,
+  .notebook-bottom {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  h1 {
+    font-size: 61px;
+  }
+  .edition {
+    font-size: 12px;
+  }
+  .section-heading .subtle {
+    display: none;
+  }
+  .facts > div {
+    padding: 0 18px;
+  }
+  .facts .fact-note {
+    gap: 10px;
+  }
+  .facts strong {
+    font-size: 24px;
+  }
+  .facts > div > span {
+    font-size: 12px;
+  }
+  .pipeline-step {
+    padding: 17px;
+    min-height: 194px;
+  }
+  .rendered {
+    padding: 22px;
+  }
+  .experiment-note {
+    grid-template-columns: 22px 1fr;
+  }
+  .download-link {
+    grid-column: 2;
+  }
+  .sample-tab {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .toolbar-actions {
+    gap: 5px;
+  }
+  .editor-toolbar {
+    padding: 0 10px;
+  }
+  .site-footer > span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 680px) {
+  .benchmark-section {
+    margin-top: 40px;
+  }
+  .benchmark-figure {
+    padding: 22px 18px;
+  }
+  .benchmark-figure figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .benchmark-speedup {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+    text-align: left;
+  }
+  .benchmark-axis {
+    display: block;
+  }
+  .benchmark-axis > span {
+    display: none;
+  }
+  .benchmark-ticks {
+    font-size: 11px;
+  }
+  .benchmark-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+  }
+  .benchmark-meter {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    height: 32px;
+  }
+  .benchmark-engine {
+    font-size: 16px;
+  }
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .site-header {
+    height: 74px;
+  }
+  .brand {
+    font-size: 21px;
+  }
+  .brand-symbol {
+    font-size: 25px;
+  }
+  .edition {
+    display: none;
+  }
+  .site-header .text-link {
+    font-size: 12px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 42px 0;
+    gap: 37px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 64px;
+    letter-spacing: -3.7px;
+    margin: 23px 0 20px;
+  }
+  .hero-copy > p {
+    font-size: 18px;
+  }
+  .hero-link {
+    font-size: 12px;
+    margin-top: 23px;
+  }
+  .hero-notebook {
+    transform: rotate(-0.7deg);
+    max-width: 100%;
+  }
+  .hero-notebook pre {
+    font-size: 14px;
+    padding: 21px;
+  }
+  .notebook-top,
+  .notebook-bottom {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+  .facts {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0;
+    margin-bottom: 39px;
+  }
+  .facts .fact-note {
+    display: none;
+  }
+  .facts > div {
+    padding: 0 15px;
+    gap: 7px;
+  }
+  .facts strong {
+    font-size: 23px;
+    white-space: nowrap;
+  }
+  .facts strong small {
+    font-size: 14px;
+  }
+  .facts > div > span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .section-heading {
+    margin-bottom: 17px;
+    gap: 6px;
+  }
+  .section-heading > div {
+    gap: 9px;
+  }
+  .section-heading h2 {
+    font-size: 18px;
+  }
+  .section-number {
+    font-size: 12px;
+  }
+  .status {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .editor-toolbar {
+    align-items: flex-start;
+    padding: 10px 8px;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .sample-tabs {
+    gap: 0;
+  }
+  .sample-tab {
+    font-size: 12px;
+    padding: 7px;
+  }
+  .toolbar-actions {
+    margin-left: auto;
+  }
+  .quiet-button {
+    font-size: 12px;
+    padding-top: 7px;
+  }
+  .quiet-button span {
+    display: none;
+  }
+  .icon-button {
+    width: 23px;
+    height: 23px;
+  }
+  .workspace {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .source-pane {
+    height: 350px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .output-pane {
+    height: 440px;
+  }
+  .pane-heading {
+    height: 39px;
+    padding: 0 14px;
+  }
+  .rendered {
+    padding: 21px;
+    font-size: 16px;
+  }
+  .rendered h1 {
+    font-size: 24px;
+  }
+  .editor-body textarea {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  #line-numbers {
+    line-height: 28px;
+    width: 36px;
+    font-size: 12px;
+  }
+  .workspace-footer {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .workspace-footer > span {
+    gap: 5px;
+  }
+  .backend-label {
+    gap: 5px;
+    font-size: 12px;
+  }
+  .backend-label select {
+    font-size: 12px;
+    padding: 5px 17px 5px 5px;
+  }
+  .notice {
+    font-size: 12px;
+  }
+  .under-the-hood {
+    margin-top: 33px;
+  }
+  .pipeline {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 8px;
+  }
+  .pipeline-step {
+    min-height: 0;
+    padding: 18px 20px;
+    display: grid;
+    grid-template-columns: 20px 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    gap: 4px 10px;
+  }
+  .pipeline-step h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  .pipeline-step p {
+    grid-column: 2 / -1;
+    max-width: none;
+    font-size: 16px;
+  }
+  .step-footer {
+    grid-column: 2 / -1;
+    margin-top: 9px;
+    padding-top: 0;
+  }
+  .pipeline-arrow {
+    display: none;
+  }
+  .experiment-note {
+    margin: 30px 0 35px;
+    gap: 8px;
+  }
+  .experiment-note p {
+    font-size: 16px;
+  }
+  .site-footer {
+    height: 78px;
+  }
+  .site-footer > span {
+    display: none;
+  }
+  .site-footer .text-link {
+    font-size: 12px;
+  }
+  .desktop-break {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

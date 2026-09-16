@@ -71,6 +71,6 @@ Browser verification uses software WebGPU on Linux. It checks actual WGSL execut
 
 Inspired by [gpu-lexer](https://gpu-lexer.vercel.app/). The included model has 6,539 int8 parameters; this weight count is not the size of the complete renderer bundle. Training metadata is available through `modelInfo`.
 
-## License status
+## License
 
-A project license has not yet been selected. The package is marked `UNLICENSED`; choose and add the intended license before a public release. Bundled dependencies retain their own licenses in [third-party notices](THIRD_PARTY_NOTICES.md).
+Licensed under the [MIT License](LICENSE). Bundled dependencies retain their own licenses in [third-party notices](THIRD_PARTY_NOTICES.md).

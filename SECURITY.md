@@ -8,4 +8,4 @@ Default character and line limits are enforced before line/feature allocation. C
 
 The library has no inference service, credentials, or telemetry. The playground self-hosts its fonts. Development servers bind to loopback by default; deploy `dist/` through an HTTPS static host instead of exposing the development server.
 
-Before publishing, configure a private vulnerability reporting channel on the repository hosting service and document it here. No maintainer contact or repository URL has been supplied in this checkout. Avoid posting exploitable security reports in public issues before the maintainer has a chance to assess them.
+Report vulnerabilities privately through [GitHub private vulnerability reporting](https://github.com/NicoAvanzDev/gpu-md/security/advisories/new). Include reproduction steps, affected versions, and expected impact. Avoid posting exploitable security reports in public issues before the maintainer has a chance to assess them.

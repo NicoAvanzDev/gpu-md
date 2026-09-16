@@ -12,5 +12,6 @@
 - Add isolated package-consumer verification, lifecycle/worker regression tests, CI, and development/production browser checks.
 - Pin CommonMark corpus integrity and keep verification separate from report publication.
 - Give Python tooling explicit entrypoints and isolated training outputs; write JSON exports atomically.
+- License the project under MIT and add public repository metadata and private vulnerability reporting instructions.
 
-The bundled model weights and historical performance recordings are unchanged. Project licensing remains undecided.
+The bundled model weights and historical performance recordings are unchanged.

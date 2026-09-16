@@ -4,9 +4,9 @@ The checkout is prepared to build an npm package and a static playground. This w
 
 ## Release identity
 
-Before a public release, the owner must choose a project license and add its `LICENSE` file, update `package.json#license` from `UNLICENSED`, and update the license-status text in the README and changelog. The existing dependency notices do not grant a license for this project's own code.
+The project is licensed under MIT; retain the root `LICENSE` file in source and package distributions. Bundled dependencies retain their own licenses in `THIRD_PARTY_NOTICES.md`.
 
-Confirm that the intended npm name or scope is available to the publishing account. Set real repository, homepage, bugs, and maintainer metadata when those locations are known. Configure the private security contact described in `SECURITY.md`. No account identity or repository URL is assumed by this checkout.
+The source repository is [NicoAvanzDev/gpu-md](https://github.com/NicoAvanzDev/gpu-md). Repository, homepage, issue tracker, and maintainer metadata are recorded in `package.json`; private vulnerability reporting is documented in `SECURITY.md`. Confirm that the intended npm name or scope is available to the publishing account before publishing a package.
 
 ## Validate the candidate
 

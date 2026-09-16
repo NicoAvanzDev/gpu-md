@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
 
-import { browserSession } from './browser-session'
+import { browserSession, captureBrowserFailure } from './browser-session'
 import { loadCommonMark } from './commonmark'
 
 const url = process.env.GPU_MD_URL ?? 'http://localhost:5173'
@@ -162,6 +162,7 @@ try {
       true,
     )
     await browser('click', '#tab-html')
+    await browser('wait', '--fn', '!document.querySelector("#html").hidden')
     assert.equal(
       await evaluate(
         '!document.querySelector("#html").hidden && document.querySelector("#html").textContent.includes("<h1>Browser test</h1>")',
@@ -169,6 +170,7 @@ try {
       true,
     )
     await browser('click', '#tab-labels')
+    await browser('wait', '--fn', '!document.querySelector("#labels").hidden')
     assert.equal(await evaluate('document.querySelectorAll(".prediction-row").length'), 5)
     await browser('select', '#backend', 'cpu')
     await browser(
@@ -184,6 +186,11 @@ try {
       'document.querySelector("#preview h1")?.textContent === "Imported document"',
     )
     await browser('click', '#copy')
+    await browser(
+      'wait',
+      '--fn',
+      'document.querySelector("#notice").textContent === "Generated HTML copied to clipboard."',
+    )
     assert.equal(
       await evaluate('document.querySelector("#notice").textContent'),
       'Generated HTML copied to clipboard.',
@@ -246,6 +253,9 @@ try {
     await writeFile('artifacts/browser-verification.json', JSON.stringify(report, null, 2) + '\n')
     console.log(JSON.stringify(report, null, 2))
   }
+} catch (error) {
+  await captureBrowserFailure(browser, 'development')
+  throw error
 } finally {
   await browser('close')
 }

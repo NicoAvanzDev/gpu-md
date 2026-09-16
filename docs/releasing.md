@@ -1,6 +1,6 @@
 # Release procedure
 
-The checkout is prepared to build an npm package and a static playground. This work does not publish either artifact.
+The checkout builds an npm package and a static playground. GitHub Actions publishes the playground to GitHub Pages after successful checks on `main`; npm publishing remains a separate owner action.
 
 ## Release identity
 
@@ -29,7 +29,9 @@ For package metadata and declarations, see the official [npm package.json refere
 
 ## Deploy the playground
 
-`npm run build:site` produces `dist/`. Upload that directory to an HTTPS static host. Relative asset paths support subdirectory hosting; `npm run test:production` checks `/demo/`, including the emitted worker, fonts, and editor rendering. Ship `FONT_NOTICES.txt` with the site. No backend, environment secrets, or inference service is required.
+The live playground is hosted at [nicoavanzdev.github.io/gpu-md](https://nicoavanzdev.github.io/gpu-md/). The `CI` workflow uploads the tested `dist/` directory and deploys it through the `github-pages` environment after Node 22/24 validation and browser checks pass. Pushes to `main` and manual workflow runs on `main` deploy automatically; pull requests only run checks. The repository's Pages publishing source must be **GitHub Actions**. See [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+`npm run build:site` produces `dist/`. Relative asset paths support the `/gpu-md/` project path; `npm run test:production` checks subdirectory hosting under `/demo/`, including the emitted worker, fonts, and editor rendering. `FONT_NOTICES.txt` is included in the deployed site. No backend, environment secrets, or inference service is required.
 
 WebGPU depends on browser and adapter support. Keep auto fallback visible and test any target browser/hardware before claiming GPU support or performance. The recorded graph intentionally retains its original measurement date and build hash; refresh it only through a verified hardware benchmark.
 

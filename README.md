@@ -6,6 +6,8 @@ This remains an experimental parser: the bundled model passes all **652 CommonMa
 
 ## Run the playground
 
+Try the [live playground on GitHub Pages](https://nicoavanzdev.github.io/gpu-md/), or run it locally:
+
 Use Node.js **22.12+ within 22.x, or 24+**. Node 24 is recorded in `.nvmrc`.
 
 ```sh
